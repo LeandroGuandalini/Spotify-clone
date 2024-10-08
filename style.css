@@ -1,0 +1,166 @@
+html, body {
+  font-family: roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  color: var(--white-spotify);
+}
+
+:root {
+  --gray-library: #121212;
+  --gray-spotify: #202020;
+  --white-spotify: #fff;
+  --black-spotify: #000;
+  --gray-search: #2a2a2a;
+  --gray-icons: rgb(182, 171, 171);
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.fa-spotify{
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+.search a {
+  color: white;
+}
+
+.fa-house{
+  background-color: #1f1f1f;
+  font-size: 1em;
+  padding: 0.8em;
+  border-radius: 50%;
+}
+
+.header header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .5em;
+  background-color: var(--gray-search);
+  border-radius: 2em;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  height: 40px;
+}
+
+.fa-magnifying-glass {
+  padding-left: 15px;
+}
+
+.input .fa-bars {
+  padding-right: 15px;
+}
+
+.input a {
+  color: white;
+}
+
+.input p {
+  color: gray;
+}
+
+.input input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  width: 350px;
+}
+
+.input input::placeholder{
+  color: rgb(204, 185, 185);
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.info i:hover {
+  cursor: pointer;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.download:hover {
+  cursor: pointer;
+}
+
+.download p {
+  font-weight: bold;
+}
+
+.main {
+  display: flex;
+  background-color: var(--black-spotify);
+  gap: 10px;
+}
+
+.nav {
+  background-color: var(--gray-library);
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px;
+}
+
+.library {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-icons a {
+  color: var(--gray-icons);
+}
+
+.nav-list {
+  display: flex;
+  gap: 10px;
+  margin-left: 5px;
+  overflow-anchor: auto;
+}
+
+.menu-item {
+  text-wrap: nowrap;
+  background-color: var(--gray-search);
+  outline: none;
+  border: none;
+  color: white;
+  padding: 8px 15px 8px 15px;
+  border-radius: 15px;
+}
