@@ -117,11 +117,20 @@ html, body {
   display: flex;
   background-color: var(--black-spotify);
   gap: 10px;
+  width: 100%;
 }
 
 .nav {
   background-color: var(--gray-library);
   border-radius: 8px;
+  min-width: 21%;
+  width: 25%;
+  max-width: 69%;
+  overflow: auto;
+  resize: horizontal;
+}
+
+.nav-content {
   overflow-y: scroll;
 }
 
@@ -164,3 +173,66 @@ html, body {
   padding: 8px 15px 8px 15px;
   border-radius: 15px;
 }
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-right: 15px;
+}
+
+.playlists ul{
+  list-style: none;
+  padding-left: 15px;
+}
+
+.playlists {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.playlist-list {
+  display: flex;
+  justify-content: left;
+}
+
+.info-playlist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.playlist-list img{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.playlists li {
+  margin-top: 15px;
+}
+
+.info-playlist h3  {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.info-playlist p {
+  font-size: 13px;
+  color: gray;
+  margin-top: 0;
+}
+
+
+
