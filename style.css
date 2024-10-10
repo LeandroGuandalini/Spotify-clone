@@ -17,6 +17,8 @@ html, body {
   --gray-icons: rgb(182, 171, 171);
 }
 
+
+
 .search {
   display: flex;
   justify-content: center;
@@ -46,6 +48,7 @@ html, body {
   align-items: center;
   background-color: black;
   color: white;
+  height: 64px;
 }
 
 .input {
@@ -118,6 +121,7 @@ html, body {
   background-color: var(--black-spotify);
   gap: 10px;
   width: 100%;
+  height: calc(100vh - 152px);
 }
 
 .nav {
@@ -126,12 +130,13 @@ html, body {
   min-width: 21%;
   width: 25%;
   max-width: 69%;
-  overflow: auto;
-  resize: horizontal;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .nav-content {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .nav-main {
@@ -233,6 +238,33 @@ html, body {
   color: gray;
   margin-top: 0;
 }
+
+.center {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, rgb(34,34,34) 0%, rgb(18,18,18) 35% );
+  border-radius: 8px;
+  overflow-y: scroll;
+  min-width: 32%;
+  max-width: 54%;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+}
+
+.block {
+  
+}
+
+.divider-nav, .divider-info {
+  background-color: red;
+  width: 5px;
+}
+
+
 
 
 
