@@ -1,7 +1,7 @@
 const dividerNav = document.querySelector('.divider-nav');
 const dividerInfo = document.querySelector('.divider-info');
 const nav = document.querySelector('.nav')
-const infoPlayling = document.querySelector('.info-playing');
+const infoPlaying = document.querySelector('.info-playing');
 
 let isResizing = false;
 let activeDivider = null;
@@ -32,6 +32,6 @@ document.addEventListener('mousemove', (event) => {
 
 document.addEventListener('mouseup', () => {
   isResizing = false;
-  activeDivider = null; // Reseta o 'divider' ativo
+  activeDivider = null; 
   document.body.style.userSelect = 'auto';
 });
